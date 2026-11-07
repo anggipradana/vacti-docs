@@ -1,0 +1,34 @@
+---
+title: Vacti Documentation
+description: AI-driven penetration testing. Operate engagements from the web control plane, run them on engines you control.
+template: splash
+hero:
+  tagline: AI-driven penetration testing. Operate from the web control plane, run on engines you control.
+  actions:
+    - text: What is Vacti
+      link: /start/01-what-is-vacti/
+      icon: right-arrow
+    - text: Architecture overview
+      link: /architecture/01-overview/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="For testers" icon="rocket">
+		Create engagements, launch runs, and review findings and evidence in the
+		control plane. Start with [What is Vacti](/start/01-what-is-vacti/), then the
+		[user guide](/user/01-sign-in/).
+	</Card>
+	<Card title="For administrators" icon="setting">
+		Deploy the control plane, enroll engines, manage releases, and hold the
+		license kill-switch. See the [admin docs](/admin/01-admin-overview/) and
+		[First-boot enrollment](/install-appliance/05-first-boot-enrollment/).
+	</Card>
+	<Card title="Install an engine" icon="download">
+		Pick the image form that matches your infrastructure: OVA, qcow2, Docker, or
+		ISO. See [Choosing how to install](/start/02-choose-install/).
+	</Card>
+</CardGrid>
