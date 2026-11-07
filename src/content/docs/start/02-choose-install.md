@@ -56,13 +56,17 @@ Choose the qcow2 when your virtualization is KVM-based (libvirt or Proxmox).
 
 ## Docker, for container stacks
 
-The Docker image is a universal multi-arch image (amd64 and arm64) published to a
-container registry. It is meant for "docker run" pentest sessions where you do
-not want a full VM or ISO at all. It is the fastest way to get an engine for a
-short-lived test, and it fits naturally into a container-based lab.
+The Docker image is a universal multi-arch image (amd64 and arm64) published to
+the GitHub Container Registry (GHCR) as `ghcr.io/anggipradana/vacti-distro`. It is
+meant for "docker run" pentest sessions where you do not want a full VM or ISO at
+all. It is the fastest way to get an engine for a short-lived test, and it fits
+naturally into a container-based lab.
 
 The enrollment token is supplied per run at `docker run` time rather than baked
-into the image, so the same image is safe to pull and reuse.
+into the image, so no secret lives in the image itself. Registry access is
+operator-controlled: authenticate to GHCR with a GitHub token that can read the
+package before you pull. See the [Docker install docs](/install-docker/01-pull-and-run/)
+for the full pull-and-run flow.
 
 Choose Docker when you run containers, want quick disposable engines, or are
 scripting engine creation.
