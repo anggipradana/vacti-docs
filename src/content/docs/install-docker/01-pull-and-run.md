@@ -6,7 +6,7 @@ sidebar:
 ---
 
 Vacti ships a universal container image that reproduces the same engine as the
-OVA and qcow2 appliance, packaged for `docker run`. There is no OS login: it is
+OVA appliance, packaged for `docker run`. There is no OS login: it is
 a container, and the engine runs as root inside it. You point the container at
 your control plane and hand it a license token at run time. No secret is baked
 into the image.

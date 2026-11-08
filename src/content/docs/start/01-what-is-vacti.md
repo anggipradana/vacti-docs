@@ -16,8 +16,8 @@ pieces talk to each other, so the rest of the docs make sense.
   targets, credentials).
 - A **pentest engine** on an appliance you control claims that work, runs the
   methodology, and streams findings and evidence back.
-- The engine ships as a set of **operating-system images** (VM, container, and
-  bare-metal ISO) so you can run it wherever your testing network lives.
+- The engine ships as a set of **operating-system images** (a VM appliance and a
+  container) so you can run it wherever your testing network lives.
 
 The engine never works alone. It is a thin outbound worker that depends on the
 control plane for its jobs and its license. Everything of value (findings,
@@ -60,9 +60,7 @@ the engine, its dependencies, and the first-boot enrollment flow already baked
 in. The images come in several forms so you can match your infrastructure:
 
 - **OVA** for VMware and VirtualBox.
-- **qcow2** for KVM and Proxmox.
 - **Docker image** for container stacks and quick `docker run` sessions.
-- **ISO** for bare-metal installs, in a headless SKU and a GUI SKU.
 
 All forms boot into the same first-boot enrollment flow and run the same engine.
 The next page, [Choosing how to install](/start/02-choose-install/), is a

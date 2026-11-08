@@ -15,8 +15,8 @@ is harmless.
 
 ## A downloaded image is inert
 
-Every image you download (the OVA, the qcow2, the installable ISO, and the
-Docker image) is ready to run but switched off. It carries no license, no
+Every image you download (the OVA and the Docker image) is ready to run but
+switched off. It carries no license, no
 enrollment token, and no reusable secret. Until you activate it against your
 control plane, it is inert: it will not test anything, and it cannot be used as
 a working engine.

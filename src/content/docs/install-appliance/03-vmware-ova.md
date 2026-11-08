@@ -21,12 +21,9 @@ pick the matching file.
 
 ## 1. Download the OVA
 
-Download the VMware OVA for your architecture and flavor from the Hugging Face
-dataset (see [Overview](/install-appliance/01-overview/) for the exact URL
-pattern and the [flavor](/install-appliance/01-overview/#flavors-headless-and-gui)
-choice). You want the file named `vacti-distro-<version>-<arch>-<flavor>.vmware.ova`
-— pick the `-gui` file for a click-through first-run wizard, or the `-headless`
-file for console/SSH enrollment.
+Download the VMware OVA for your architecture from the Hugging Face dataset (see
+[Overview](/install-appliance/01-overview/) for the exact URL pattern). You want
+the file named `vacti-distro-<version>-<arch>-gui.vmware.ova`.
 
 Verify the checksum before importing:
 
@@ -80,7 +77,7 @@ Enrollment needs only the control-plane URL and the enrollment token.
 
 ## Option B: ESXi / vCenter (ovftool)
 
-For a headless vSphere deploy, `ovftool` is the reliable path and lets you set
+For an unattended vSphere deploy, `ovftool` is the reliable path and lets you set
 the enrollment token as an OVF property at deploy time.
 
 ### 2. Deploy with ovftool

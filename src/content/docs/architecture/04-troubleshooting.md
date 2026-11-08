@@ -104,11 +104,11 @@ ls -l /etc/vacti-engine/engine.env
 - Confirm the box meets the engine's memory requirement. If an under-provisioned
   box restarts repeatedly, give it more RAM or swap.
 
-## Login screen never appears (GUI ISO, no desktop login)
+## Login screen never appears (GUI appliance, no desktop login)
 
 **Why**
 
-- On the GUI ISO the desktop login is withheld until the box is enrolled. Until
+- On the GUI appliance the desktop login is withheld until the box is enrolled. Until
   then the activation kiosk owns the first console and runs the
   network-then-enroll flow. A box that never finished enrollment shows the kiosk,
   not a desktop login.

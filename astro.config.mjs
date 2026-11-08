@@ -50,10 +50,6 @@ export default defineConfig({
 					items: [{ autogenerate: { directory: 'install-docker' } }],
 				},
 				{
-					label: 'Install: ISO',
-					items: [{ autogenerate: { directory: 'install-iso' } }],
-				},
-				{
 					label: 'Architecture + Troubleshooting',
 					items: [{ autogenerate: { directory: 'architecture' } }],
 				},

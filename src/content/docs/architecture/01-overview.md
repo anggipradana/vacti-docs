@@ -35,8 +35,8 @@ control plane to drive it.
 
 ### OS images
 
-An engine ships as a downloadable image: a VM appliance (OVA or qcow2), an
-installable ISO, or a Docker image. You pick the form that fits your environment,
+An engine ships as a downloadable image: a VM appliance (OVA) or a Docker image.
+You pick the form that fits your environment,
 boot it, and enroll it against your control plane. See
 [Choosing how to install](/start/02-choose-install/).
 

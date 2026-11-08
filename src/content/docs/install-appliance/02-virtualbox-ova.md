@@ -20,12 +20,9 @@ VMware OVA will NOT import cleanly in VirtualBox; use the matching file.
 
 ## 1. Download the OVA
 
-Download the VirtualBox OVA for your architecture and flavor from the Hugging
-Face dataset (see [Overview](/install-appliance/01-overview/) for the exact URL
-pattern and the [flavor](/install-appliance/01-overview/#flavors-headless-and-gui)
-choice). You want the file named `vacti-distro-<version>-<arch>-<flavor>.vbox.ova`
-— for a click-through first-run wizard pick the `-gui` file; for console/SSH
-enrollment pick the `-headless` file.
+Download the VirtualBox OVA for your architecture from the Hugging Face dataset
+(see [Overview](/install-appliance/01-overview/) for the exact URL pattern). You
+want the file named `vacti-distro-<version>-<arch>-gui.vbox.ova`.
 
 Verify the checksum before importing:
 
@@ -69,9 +66,9 @@ The appliance must be able to reach your control plane to enroll.
 
 ## 5. (Optional) Prepare non-interactive enrollment
 
-The appliance enrolls on first boot (the headless flavor from the console or a seed; the GUI flavor via its on-screen wizard). The simplest way to hand it
-the control-plane URL and enrollment token without a console is to attach a
-NoCloud seed CD. This is optional; you can also enroll from the console.
+The appliance enrolls on first boot through its on-screen wizard. The simplest
+way to hand it the control-plane URL and enrollment token hands-free is to attach
+a NoCloud seed CD. This is optional; you can also enroll from the wizard.
 
 1. Build a `cidata.iso` that carries a filled `user-data` with a fresh
    single-use enrollment token (see
