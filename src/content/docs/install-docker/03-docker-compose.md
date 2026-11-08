@@ -41,7 +41,7 @@ volumes:
 Notes on this file:
 
 1. `image` pins the engine image. For reproducible deployments, replace
-   `:latest` with a versioned tag such as `:0.2.411`.
+   `:latest` with a versioned tag such as `:0.2.427`.
 2. `restart: unless-stopped` gives the container a restart policy. A container
    has no systemd watchdog, so the restart policy plus the image HEALTHCHECK
    replace the appliance's watchdog behavior.
@@ -111,7 +111,7 @@ engine id:
 ```yaml
 services:
   vacti-engine:
-    image: ghcr.io/anggipradana/vacti-distro:0.2.411
+    image: ghcr.io/anggipradana/vacti-distro:0.2.427
     container_name: vacti-engine
     restart: unless-stopped
     environment:

@@ -20,12 +20,12 @@ ghcr.io/anggipradana/vacti-distro:latest
 ```
 
 Versioned tags are published alongside `latest`. The publish step tags each
-build as both `:latest` and `:<version>` (for example `:0.2.411`), where the
+build as both `:latest` and `:<version>` (for example `:0.2.427`), where the
 version is the pinned engine release the image was built against:
 
 ```
 ghcr.io/anggipradana/vacti-distro:latest
-ghcr.io/anggipradana/vacti-distro:0.2.411
+ghcr.io/anggipradana/vacti-distro:0.2.427
 ```
 
 Pin a versioned tag for reproducible deployments; use `:latest` only when you

@@ -16,8 +16,8 @@ Pick the file that matches your architecture and SKU (see
 download it from the Hugging Face dataset.
 
 ```
-# Example: amd64 GUI, v0.1.0. Replace the version, arch, and sku to match.
-VERSION=0.1.0
+# Example: amd64 GUI, v0.1.12. Replace the version, arch, and sku to match.
+VERSION=0.1.12
 ARCH=amd64        # amd64 | arm64
 SKU=gui           # gui | headless
 BASE=https://huggingface.co/datasets/anggipradana/vacti-distro-images/resolve/main
@@ -80,7 +80,7 @@ The hybrid ISO is written raw to the device.
 **Linux:**
 
 ```
-sudo dd if=vacti-distro-0.1.0-amd64-gui.iso of=/dev/sdX bs=4M status=progress oflag=sync
+sudo dd if=vacti-distro-0.1.12-amd64-gui.iso of=/dev/sdX bs=4M status=progress oflag=sync
 sync
 ```
 
@@ -90,7 +90,7 @@ finish and for `sync` to return before removing the stick.
 **macOS** (use the raw node `rdisk` for speed):
 
 ```
-sudo dd if=vacti-distro-0.1.0-amd64-gui.iso of=/dev/rdiskN bs=4m
+sudo dd if=vacti-distro-0.1.12-amd64-gui.iso of=/dev/rdiskN bs=4m
 ```
 
 **Cross-platform GUI tool:** [balenaEtcher](https://etcher.balena.io/) writes the

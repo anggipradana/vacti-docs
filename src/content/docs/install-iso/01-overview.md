@@ -79,14 +79,14 @@ https://huggingface.co/datasets/anggipradana/vacti-distro-images/resolve/main/v<
 
 The published ISO filenames follow `vacti-distro-<version>-<arch>-<sku>.iso`:
 
-| Deliverable | Filename (example for v0.1.0) |
+| Deliverable | Filename (example for v0.1.12) |
 | --- | --- |
-| amd64 headless | `vacti-distro-0.1.0-amd64-headless.iso` |
-| amd64 GUI | `vacti-distro-0.1.0-amd64-gui.iso` |
-| arm64 headless | `vacti-distro-0.1.0-arm64-headless.iso` |
-| arm64 GUI | `vacti-distro-0.1.0-arm64-gui.iso` |
+| amd64 headless | `vacti-distro-0.1.12-amd64-headless.iso` |
+| amd64 GUI | `vacti-distro-0.1.12-amd64-gui.iso` |
+| arm64 headless | `vacti-distro-0.1.12-arm64-headless.iso` |
+| arm64 GUI | `vacti-distro-0.1.12-arm64-gui.iso` |
 
-Replace `0.1.0` with the version you are installing and pick the row that
+Replace `0.1.12` with the version you are installing and pick the row that
 matches your hardware and SKU.
 
 For current ISO file sizes, check the dataset listing: sizes are not fixed by

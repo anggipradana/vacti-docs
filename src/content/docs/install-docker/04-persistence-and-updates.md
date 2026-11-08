@@ -97,7 +97,7 @@ Compose recreates the service with the newer image and keeps the named volume.
 a versioned tag and bump it deliberately:
 
 ```yaml
-    image: ghcr.io/anggipradana/vacti-distro:0.2.411
+    image: ghcr.io/anggipradana/vacti-distro:0.2.427
 ```
 
 To update, change the tag to the new version, then `docker compose pull` and
